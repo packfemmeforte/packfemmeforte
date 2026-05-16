@@ -3,13 +3,14 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pack Femme Forte & Indépendante</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--nude:#C4A882;--nude-light:#EDE0D0;--nude-dark:#8B6E52;--cream:#FAF6F1;--rose:#D4607A;--rose-dark:#B04060;--dark:#2C1F18;--text:#3D2B1F;--gold:#C9972A;}
 *{margin:0;padding:0;box-sizing:border-box;}
-html,body{width:100%;min-height:100vh;font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;margin:0!important;padding:0!important;max-width:100%!important;}
+html,body{width:100%;min-height:100vh;font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;margin:0!important;padding:0!important;max-width:100%!important;color-scheme:light only;}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .hero{background:var(--dark);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px;position:relative;overflow:hidden;}
@@ -24,7 +25,7 @@ html,body{width:100%;min-height:100vh;font-family:"DM Sans",sans-serif;backgroun
 .btn-primary{background:var(--rose);color:#fff;border:none;padding:18px 44px;font-family:"DM Sans",sans-serif;font-size:16px;font-weight:500;border-radius:100px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 8px 30px rgba(212,96,122,0.35);}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,96,122,0.5);}
 .strip{background:var(--nude);padding:14px 24px;text-align:center;font-size:13px;color:var(--dark);font-weight:500;}
-section{padding:72px 24px;max-width:860px;margin:0 auto;}
+section{padding:72px 24px;max-width:860px;margin:0 auto;}section.dark-bg h2{color:#fff;}section.dark-bg h2 em{color:var(--nude);}.testimonials h2{color:var(--dark);}.testimonials h2 em{color:var(--rose);}
 .section-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--nude-dark);margin-bottom:14px;}
 h2{font-family:"Playfair Display",serif;font-size:clamp(26px,5vw,40px);font-weight:700;line-height:1.2;color:var(--dark);margin-bottom:24px;}
 h2 em{font-style:italic;color:var(--rose);}
@@ -75,12 +76,12 @@ h2 em{font-style:italic;color:var(--rose);}
 .final-cta{background:var(--rose);padding:72px 24px;text-align:center;}
 .final-cta h2{color:#fff;font-family:"Playfair Display",serif;font-size:clamp(26px,5vw,42px);margin-bottom:14px;}
 .final-cta p{color:rgba(255,255,255,0.8);font-size:15px;max-width:460px;margin:0 auto 36px;line-height:1.7;}
-.btn-white{background:#fff;color:var(--rose-dark);border:none;padding:18px 44px;font-family:"DM Sans",sans-serif;font-size:16px;font-weight:600;border-radius:100px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 8px 30px rgba(0,0,0,0.15);}
+.btn-white{background:#fff;color:var(--rose-dark);border:none;padding:16px 28px;font-family:"DM Sans",sans-serif;font-size:16px;font-weight:600;border-radius:100px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 8px 30px rgba(0,0,0,0.15);}
 .btn-white:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.25);}
 .final-note{margin-top:18px;font-size:12px;color:rgba(255,255,255,0.6);}
 footer{background:var(--dark);padding:28px 24px;text-align:center;font-size:12px;color:rgba(255,255,255,0.3);}
 footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.reveal{opacity:1;transform:translateY(0);transition:opacity 0.7s ease,transform 0.7s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 </style>
 </head>
@@ -91,8 +92,8 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
   <h1>Deviens une femme<br><em>forte &amp; indépendante</em></h1>
   <p class="hero-sub">6 guides complets + un nouveau contenu chaque mois pour te transformer de l'intérieur — au rythme qui te convient.</p>
   <div class="hero-cta">
-    <a href="https://www.davfitcoachsportif.com/pack-femme-forte-et-independante/buy" class="btn-primary">Je commence ma transformation →</a>
-    <span class="hero-note">À partir de 9,90€/mois · Résiliable à tout moment</span>
+    <a href="https://www.davfitcoachsportif.com/pack-femme-forte-et-independante/buy" class="btn-primary">Je deviens Forte &amp; Indépendante 👸</a>
+
   </div>
 </div>
 
@@ -128,27 +129,30 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
 <div class="pricing-section" id="pricing">
   <div class="pricing-inner reveal">
     <p class="section-label">Choisis ton abonnement</p>
-    <h2>Investis en toi,<br><em>sans te ruiner</em></h2>
+    <h2>Investis<br><em>sur toi</em></h2>
     <p class="pricing-sub">Les 6 guides dès le premier jour + un nouveau contenu exclusif chaque mois pour continuer à avancer.</p>
     <div class="pricing-cards">
       <div class="pricing-card" id="card-mensuel"><p class="pricing-period">Mensuel</p><p class="pricing-amount"><sup>€</sup>9<span class="cents">,90</span></p><p class="pricing-desc">par mois<br>Résiliable à tout moment</p></div>
       <div class="pricing-card" id="card-annuel"><span class="pricing-badge">🔥 Meilleure offre</span><p class="pricing-period">Annuel</p><p class="pricing-amount"><sup>€</sup>69<span class="cents">,90</span></p><p class="pricing-desc">par an · soit 5,83€/mois</p><span class="pricing-saving">Tu économises 49€</span></div>
     </div>
-    <a href="https://www.davfitcoachsportif.com/pack-femme-forte-et-independante/buy" class="btn-primary" style="font-size:17px;padding:20px 52px;">Je deviens Forte &amp; Indépendante 👸</a>
-    <p style="color:rgba(255,255,255,0.3);font-size:13px;margin-top:16px;">Paiement sécurisé · Accès immédiat · Sans engagement (mensuel)</p>
+    <a href="https://www.davfitcoachsportif.com/pack-femme-forte-et-independante/buy" class="btn-primary" style="font-size:15px;padding:16px 44px;width:100%;max-width:480px;">Je deviens Forte &amp; Indépendante 👸</a>
+    <p style="color:rgba(255,255,255,0.3);font-size:13px;margin-top:16px;">Paiement sécurisé · Accès immédiat · Sans engagement</p>
   </div>
 </div>
 
 <div class="perks">
   <div class="perks-inner reveal">
-    <p class="section-label">Pourquoi s'abonner</p>
-    <h2>Tout ce que tu as dès<br><em>le premier jour</em></h2>
-    <div class="perks-grid">
-      <div class="perk-card"><span class="perk-icon">📚</span><h3>6 guides complets</h3><p>Plus de 300 pages de contenu pratique, accessibles immédiatement après ton inscription.</p></div>
-      <div class="perk-card"><span class="perk-icon">✨</span><h3>Nouveau contenu chaque mois</h3><p>Mini-guide, challenge, affirmations ou checklist — quelque chose de nouveau t'attend chaque mois.</p></div>
-      <div class="perk-card"><span class="perk-icon">📱</span><h3>Accès partout, tout le temps</h3><p>Tous tes guides en format numérique, consultables depuis ton téléphone, ta tablette ou ton ordi.</p></div>
-      <div class="perk-card"><span class="perk-icon">💬</span><h3>Communauté privée</h3><p>Rejoins d'autres femmes qui avancent comme toi. Partages, entraide et bonne énergie garantis.</p></div>
-    </div>
+
+```
+<h2>Tout ce que tu as dès<br><em>le premier jour</em></h2>
+<div class="perks-grid">
+  <div class="perk-card"><span class="perk-icon">📚</span><h3>6 guides complets</h3><p>Plus de 300 pages de contenu pratique, accessibles immédiatement après ton inscription.</p></div>
+  <div class="perk-card"><span class="perk-icon">✨</span><h3>Nouveau contenu chaque mois</h3><p>Mini-guide, challenge, affirmations ou checklist — quelque chose de nouveau t'attend chaque mois.</p></div>
+  <div class="perk-card"><span class="perk-icon">📱</span><h3>Accès partout, tout le temps</h3><p>Tous tes guides en format numérique, consultables depuis ton téléphone, ta tablette ou ton ordi.</p></div>
+  <div class="perk-card"><span class="perk-icon">💬</span><h3>Communauté privée</h3><p>Rejoins d'autres femmes qui avancent comme toi. Partages, entraide et bonne énergie garantis.</p></div>
+</div>
+```
+
   </div>
 </div>
 
@@ -166,8 +170,8 @@ footer a{color:rgba(255,255,255,0.4);text-decoration:none;}
 <div class="final-cta">
   <h2>Tu es prête. 👸</h2>
   <p>Ta meilleure version n'attend que toi pour exister. Commence aujourd'hui.</p>
-  <a href="https://www.davfitcoachsportif.com/pack-femme-forte-et-independante/buy" class="btn-white">Je m'abonne maintenant</a>
-  <p class="final-note">À partir de 9,90€/mois · Accès immédiat aux 6 guides · Résiliable quand tu veux</p>
+  <a href="https://www.davfitcoachsportif.com/pack-femme-forte-et-independante/buy" class="btn-white">Je deviens Forte &amp; Indépendante 👸</a>
+
 </div>
 
 <footer>
